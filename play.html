@@ -1,0 +1,853 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+
+
+
+
+<!--HEADER-->
+<style>
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #1a1a1a;
+max-width: 100%;
+height: 50px;
+}
+
+li {
+  float: left;
+  border-right:0px solid #ffcc00;
+}
+
+li:last-child {
+  border-right: none;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 17px 20px;
+  text-decoration: none;
+height: 50px;
+}
+
+li a:hover:not(.active) {
+  background-color: #ffd633;
+}
+
+.active {
+  background-color: #000 ;
+}
+
+
+<!--DROPDOWN-->
+
+<!--FINE HEADER E DROPDOWN-->
+
+
+</style>
+</head>
+
+
+
+
+
+
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Play Fanta LoL</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat%7COpen+Sans:700,400%7CRaleway:400,800,900" rel="stylesheet" />
+    <link rel="icon" href="lol.ico" type="image/x-icon">
+    <link href="css/library/bootstrap.css" rel="stylesheet" type="text/css" />
+    <link href="css-min/soccer.min.css" rel="stylesheet" type="text/css" />
+    <link href="dev-assets/preloader-default.css" rel="stylesheet" type="text/css" />
+    <link href="dev-assets/demo-switcher.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body class="esport-black">
+    <div class="preloader-wrapper" id="preloader">
+    <div class="motion-line dark-big"></div>
+    <div class="motion-line yellow-big"></div>
+    <div class="motion-line dark-small"></div>
+    <div class="motion-line yellow-normal"></div>
+    <div class="motion-line yellow-small1"></div>
+    <div class="motion-line yellow-small2"></div>
+</div>
+
+
+
+<ul>
+  <li><a href="index.html"><b>HOME<b></a></li>
+  <li><a href="play.html">PLAY FANTA LOL</a></li>
+  <li><a href="bets.html">BETS</a></li>
+  <li><a href="tournaments.html">TOURNAMENTS</a></li>
+  <li><a href="store.html">STORE</a></li>
+  <li><a href="partners.html">PARTNERS</a></li>
+  <li><a href="contact.html">CONTACT</a></li>
+  <li><a href="premium.html" style="color:#ffd633">PREMIUM &#9733</a></li>
+<li><a href="https://www.facebook.com" class="fa fa-facebook"></a></li>
+<li><a href="https://www.twitter.com" class="fa fa-twitter"></a></li>
+<li><a href="https://www.instagram.com" class="fa fa-instagram"></a></li>
+<li><a href="https://www.youtube.com" class="fa fa-youtube"></a></li>
+<li><a href="https://www.twitch.com" class="fa fa-twitch"></a></li>
+  <li style="float:right"><a href="profile.html">PROFILE</a></li>
+</ul>
+
+
+
+
+
+
+<!-- jQuery -->
+<script src="plugins/jQuery/jquery.min.js"></script>
+<!-- Bootstrap JS -->
+<script src="plugins/bootstrap/bootstrap.min.js"></script>
+<!-- slick slider -->
+<script src="plugins/slick/slick.min.js"></script>
+<!-- aos -->
+<script src="plugins/aos/aos.js"></script>
+<!-- venobox popup -->
+<script src="plugins/venobox/venobox.min.js"></script>
+<!-- mixitup filter -->
+<script src="plugins/mixitup/mixitup.min.js"></script>
+<!-- google map -->
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCcABaamniA6OL5YvYSpB3pFMNrXwXnLwU&libraries=places"></script>
+<script src="plugins/google-map/gmap.js"></script>
+
+<!-- Main Script -->
+<script src="js/script.js"></script>
+
+
+<!--ESPORT TEAM COOKIES POLICY-->
+<style type="text/css" src="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css"></style>
+<link rel="stylesheet" href="css/cookieBubble.min.css"></link>
+<style>
+    body {
+        position:relative;
+        margin:0px;
+        padding:0px;
+        height:100%;
+    }
+</style>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    	<script src="js/cookieBubble.min.js"></script>
+        <script>
+            (function ($) {
+                    $.cookieBubble();
+            })(jQuery);
+        </script>
+<!-- END ESPORT TEAM COOKIES POLICY-->
+
+    
+
+
+<!--ESPORT TEAM LANDING HEADER BEGIN-->
+
+<div id="team" class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="sport-championship-standings">
+    <div class="buttons-wrapper">
+        <a style="color:#ffffff" href ="#" class="arrow left"><i class="fa fa-caret-left" aria-hidden="true"></i></a>
+        <a style="color:#ffffff" href ="#" class="arrow right"><i class="fa fa-caret-right" aria-hidden="true"></i></a>
+        <span style="color:#ffffff">
+            --FANTA LEAGUE NAME--:
+            <span class="league" style="color:#ffd633">--my team's name--</span>            
+        </span>
+    </div>
+    <div class="mySlides fade-standings">
+        <span class="league_name">--my team's name--</span>
+        <a href ="#" class="item up">
+            <span class="standings-position">
+                <i id="sx1"class="fa fa-caret-up" aria-hidden="true"></i>
+                1
+            </span>
+            <img id="photo1" src ="https://gamepedia.cursecdn.com/lolesports_gamepedia_en/thumb/3/3d/G2_Wunder_2019_Split_2.png/800px-G2_Wunder_2019_Split_2.png?version=6d45d23d7aaaff7f0d2684b20bf255e2" alt='team-logo'>
+            <span class="name" id="player1">WUNDER - G2 ESPORTS</span>
+            <span class="number" style="background-color:#ff3333" id='btn' type="submit">X</span>
+
+
+<script>
+var btn = document.getElementById('btn');
+btn.onclick = function () {
+    document.getElementById('player1').remove();
+    this.remove();
+    document.getElementById('photo1').remove();
+    this.remove();
+    document.getElementById('sx1').remove();
+    this.remove();
+    document.getElementById('n1').remove();
+    this.remove();
+};
+</script>
+
+
+        </a>
+        <a href ="#" class="item up">
+            <span class="standings-position">
+                <i id="sx2" class="fa fa-caret-up" aria-hidden="true"></i>
+                2
+            </span>
+            <img id ="ph2"src ="https://gamepedia.cursecdn.com/lolesports_gamepedia_en/thumb/5/56/FNC_Broxah_2019_Split_2.png/800px-FNC_Broxah_2019_Split_2.png?version=c6f7d186a61020f8c21df298402a71db" alt='team-logo'>
+            <span class="name" id="p2">BROXAH - FNATIC</span>
+            <span class="number" style="background-color:#ff3333" id='btn2' type="submit">X</span>
+        
+
+
+
+<script>
+var btn = document.getElementById('btn2');
+btn.onclick = function () {
+    document.getElementById('p2').remove();
+    this.remove();
+    document.getElementById('ph2').remove();
+    this.remove();
+    document.getElementById('sx2').remove();
+    this.remove();
+    document.getElementById('n2').remove();
+    this.remove();
+};
+</script>
+
+</a>
+
+        <a href ="#" class="item down">
+            <span class="standings-position">
+                <i id="sx3" class="fa fa-caret-down" aria-hidden="true"></i>
+                3
+            </span>
+            <img id="ph3" src ="https://gamepedia.cursecdn.com/lolesports_gamepedia_en/thumb/3/34/SPY_Humanoid_2019_Split_2.png/800px-SPY_Humanoid_2019_Split_2.png?version=2db7d27c18ec9a777d024b6f09c8790b" alt='team-logo'>
+            <span class="name" id="p3">HUMANOID - SPLYCE</span>
+            <span class="number" style="background-color:#ff3333" id='btn3' type="submit">X</span>
+
+<script>
+var btn = document.getElementById('btn3');
+btn.onclick = function () {
+    document.getElementById('p3').remove();
+    this.remove();
+    document.getElementById('ph3').remove();
+    this.remove();
+    document.getElementById('sx3').remove();
+    this.remove();
+    document.getElementById('n3').remove();
+    this.remove();
+};
+</script>
+
+        </a>
+        <a href ="#" class="item none">
+            <span class="standings-position">
+                <i id="sx4" class="fa fa-circle" aria-hidden="true"></i>
+                4
+            </span>
+            <img id="ph4" src ="https://gamepedia.cursecdn.com/lolesports_gamepedia_en/thumb/1/15/VIT_Attila_2019_Split_2.png/800px-VIT_Attila_2019_Split_2.png?version=1dedddb69e03890449719cb149f8d46b" alt='team-logo'>
+            <span class="name" id="p4">ATTILA - TEAM VITALITY</span>
+            <span class="number" style="background-color:#ff3333" id='btn4' type="submit">X</span>
+
+
+<script>
+var btn = document.getElementById('btn4');
+btn.onclick = function () {
+    document.getElementById('p4').remove();
+    this.remove();
+    document.getElementById('ph4').remove();
+    this.remove();
+    document.getElementById('sx4').remove();
+    this.remove();
+    document.getElementById('n4').remove();
+    this.remove();
+};
+</script>
+
+        </a>
+        <a href ="#" class="item up">
+            <span class="standings-position">
+                <i id="sx5" class="fa fa-caret-up" aria-hidden="true"></i>
+                5
+            </span>
+            <img id="ph5" src ="https://gamepedia.cursecdn.com/lolesports_gamepedia_en/thumb/8/83/OG_Mithy_2019_Split_2.png/800px-OG_Mithy_2019_Split_2.png?version=abbf3b86ef9399a0f0fd32e67aa5578c" alt='team-logo'>
+            <span class="name" id="p5">MITHY - ORIGEN</span>
+            <span class="number" style="background-color:#ff3333" id='btn5' type="submit">x</span>
+
+<script>
+var btn = document.getElementById('btn5');
+btn.onclick = function () {
+    document.getElementById('p5').remove();
+    this.remove();
+    document.getElementById('ph5').remove();
+    this.remove();
+    document.getElementById('sx5').remove();
+    this.remove();
+    document.getElementById('n5').remove();
+    this.remove();
+};
+</script>
+
+
+
+
+
+
+
+
+</a><a style="color:#ffffff"> Substitutes </a>
+        <a href ="#" class="item none">
+            <span class="standings-position">
+                <i id="sx6" class="fa fa-circle" aria-hidden="true"></i>
+                6
+            </span>
+            <img id="ph6" src ="https://gamepedia.cursecdn.com/lolesports_gamepedia_en/thumb/b/be/S04_Upset_2019_Split_2.png/800px-S04_Upset_2019_Split_2.png?version=800827bdb2987b7974f0e84dd9c2466d" alt='team-logo'>
+            <span class="name" id="p6">UPSET - FC SCHALKE 04</span>
+            <span class="number" style="background-color:#66ff33" id='btn6' type="submit">+</span>
+
+
+<script>
+var btn = document.getElementById('btn6');
+btn.onclick = function () {
+    document.getElementById('p6').remove();
+    this.remove();
+    document.getElementById('ph6').remove();
+    this.remove();
+    document.getElementById('sx6').remove();
+    this.remove();
+    document.getElementById('n6').remove();
+    this.remove();
+};
+</script>
+
+        </a>
+        <a href ="#" class="item up">
+            <span class="standings-position">
+                <i id="sx7" class="fa fa-caret-up" aria-hidden="true"></i>
+                7
+            </span>
+            <img id="ph7" src ="https://gamepedia.cursecdn.com/lolesports_gamepedia_en/thumb/7/70/SK_Selfmade_2019_Split_2.png/800px-SK_Selfmade_2019_Split_2.png?version=0f72d1c1f61f0590736293d109d50b22" alt='team-logo'>
+            <span class="name" id="p7">SELFMADE - SK GAMING</span>
+            <span class="number" style="background-color:#66ff33" id='btn7' type="submit">+</span>
+
+<script>
+var btn = document.getElementById('btn7');
+btn.onclick = function () {
+    document.getElementById('p7').remove();
+    this.remove();
+    document.getElementById('ph7').remove();
+    this.remove();
+    document.getElementById('sx7').remove();
+    this.remove();
+    document.getElementById('n7').remove();
+    this.remove();
+};
+</script>
+
+
+
+
+
+
+
+        </a>
+    </div>
+     <div class="mySlides fade-standings">
+        <span class="league_name">--friend 1 team name--</span>
+        <a href ="#" class="item up">
+            <span class="standings-position">
+                <i class="fa fa-caret-up" aria-hidden="true"></i>
+                1
+            </span>
+            <img src ="images/soccer/team-logo1.png" alt='team-logo'>
+            <span class="name">PLAYER - TEAM</span>
+            <span class="number">0</span>
+        </a>
+        <a href ="#" class="item up">
+            <span class="standings-position">
+                <i class="fa fa-caret-up" aria-hidden="true"></i>
+                2
+            </span>
+            <img src ="images/soccer/team-logo1.png" alt='team-logo'>
+            <span class="name">PLAYER - TEAM</span>
+            <span class="number">0</span>
+        </a>
+        <a href ="#" class="item down">
+            <span class="standings-position">
+                <i class="fa fa-caret-down" aria-hidden="true"></i>
+                3
+            </span>
+            <img src ="images/soccer/team-logo1.png" alt='team-logo'>
+            <span class="name">PLAYER - TEAM</span>
+            <span class="number">0</span>
+        </a>
+        <a href ="#" class="item none">
+            <span class="standings-position">
+                <i class="fa fa-circle" aria-hidden="true"></i>
+                4
+            </span>
+            <img src ="images/soccer/team-logo1.png" alt='team-logo'>
+            <span class="name">PLAYER - TEAM</span>
+            <span class="number">0</span>
+        </a>
+        <a href ="#" class="item up">
+            <span class="standings-position">
+                <i class="fa fa-caret-up" aria-hidden="true"></i>
+                5
+            </span>
+            <img src ="images/soccer/team-logo1.png" alt='team-logo'>
+            <span class="name">PLAYER - TEAM</span>
+            <span class="number">0</span>
+        </a>
+    </div>
+
+
+
+
+
+<div class="mySlides fade-standings">
+        <span class="league_name">--friend 2 team name--</span>
+        <a href ="#" class="item up">
+            <span class="standings-position">
+                <i class="fa fa-caret-up" aria-hidden="true"></i>
+                1
+            </span>
+            <img src ="images/soccer/team-logo1.png" alt='team-logo'>
+            <span class="name">PLAYER - TEAM</span>
+            <span class="number">0</span>
+        </a>
+        <a href ="#" class="item up">
+            <span class="standings-position">
+                <i class="fa fa-caret-up" aria-hidden="true"></i>
+                2
+            </span>
+            <img src ="images/soccer/team-logo1.png" alt='team-logo'>
+            <span class="name">PLAYER - TEAM</span>
+            <span class="number">0</span>
+        </a>
+        <a href ="#" class="item down">
+            <span class="standings-position">
+                <i class="fa fa-caret-down" aria-hidden="true"></i>
+                3
+            </span>
+            <img src ="images/soccer/team-logo1.png" alt='team-logo'>
+            <span class="name">PLAYER - TEAM</span>
+            <span class="number">0</span>
+        </a>
+        <a href ="#" class="item none">
+            <span class="standings-position">
+                <i class="fa fa-circle" aria-hidden="true"></i>
+                4
+            </span>
+            <img src ="images/soccer/team-logo1.png" alt='team-logo'>
+            <span class="name">PLAYER - TEAM</span>
+            <span class="number">0</span>
+        </a>
+        <a href ="#" class="item up">
+            <span class="standings-position">
+                <i class="fa fa-caret-up" aria-hidden="true"></i>
+                5
+            </span>
+            <img src ="images/soccer/team-logo1.png" alt='team-logo'>
+            <span class="name">PLAYER - TEAM</span>
+            <span class="number">0</span>
+        </a>
+    </div>
+     <div class="mySlides fade-standings">
+        <span class="league_name">--friend 3 team name--</span>
+        <a href ="#" class="item up">
+            <span class="standings-position">
+                <i class="fa fa-caret-up" aria-hidden="true"></i>
+                1
+            </span>
+            <img src ="images/soccer/team-logo1.png" alt='team-logo'>
+            <span class="name">PLAYER - TEAM</span>
+            <span class="number">0</span>
+        </a>
+        <a href ="#" class="item up">
+            <span class="standings-position">
+                <i class="fa fa-caret-up" aria-hidden="true"></i>
+                2
+            </span>
+            <img src ="images/soccer/team-logo1.png" alt='team-logo'>
+            <span class="name">PLAYER - TEAM</span>
+            <span class="number">0</span>
+        </a>
+        <a href ="#" class="item down">
+            <span class="standings-position">
+                <i class="fa fa-caret-down" aria-hidden="true"></i>
+                3
+            </span>
+            <img src ="images/soccer/team-logo1.png" alt='team-logo'>
+            <span class="name">PLAYER - TEAM</span>
+            <span class="number">0</span>
+        </a>
+        <a href ="#" class="item none">
+            <span class="standings-position">
+                <i class="fa fa-circle" aria-hidden="true"></i>
+                4
+            </span>
+            <img src ="images/soccer/team-logo1.png" alt='team-logo'>
+            <span class="name">PLAYER - TEAM</span>
+            <span class="number">0</span>
+        </a>
+        <a href ="#" class="item up">
+            <span class="standings-position">
+                <i class="fa fa-caret-up" aria-hidden="true"></i>
+                5
+            </span>
+            <img src ="images/soccer/team-logo1.png" alt='team-logo'>
+            <span class="name">PLAYER - TEAM</span>
+            <span class="number">0</span>
+        </a>
+    </div>
+
+
+
+</div>
+</div>                
+
+
+<div id="team" class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="sport-championship-standings">
+    <div class="buttons-wrapper">
+
+</a><p style="color:#ffffff" style="margin-top:-56px" style="background-color:#ffffff"> MY LEAGUES</p>
+
+
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;
+<a class="btn" style="margin-top:-56px">CREATE NEW</a> <a class="btn" style="margin-top:-56px">JOIN A LEAGUE</a>
+
+
+</br>
+
+        <a href ="#" class="item none" style="margin-top:2px" class="dropbtn" id="myBtn">
+            <span class="standings-position">
+                
+                
+            </span>
+            
+            <span class="name">CLASSMATES</span>
+     
+        </a>
+
+
+<div id="myDropdown" class="dropdown-content">
+    <a href="#p1tn">me</a>
+    <a href="#about">player2</a>
+    <a href="#contact">player3</a>
+    <a href="#contact">player4</a></div>
+
+
+<a href ="#" class="item none" class="dropbtn" id="myBtn">
+            <span class="standings-position">
+                
+                
+            </span>
+            
+            <span class="name">FOOTBALL MATES</span>
+            
+        </a>
+
+
+<div id="myDropdown" class="dropdown-content">
+    <a href="#home">me</a>
+    <a href="#about">playerA</a>
+    <a href="#contact">playerB</a>
+    <a href="#contact">playerC</a></div>
+
+<a href ="#" class="item none" class="dropbtn" id="myBtn">
+            <span class="standings-position">
+                
+                
+            </span>
+            
+            <span class="name" id="p6">OTHER FRIENDS</span>
+
+        </a>
+
+
+<div id="myDropdown" class="dropdown-content">
+    <a href="#home">me</a>
+    <a href="#about">player2</a>
+    <a href="#contact">player3</a>
+    <a href="#contact">player4</a></div>
+
+<style>
+
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: right;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 12px;
+  text-decoration: none;
+  display: block;
+  font: italic;
+}
+
+.show {display:block;}
+</style>
+
+
+<script>
+// Get the button, and when the user clicks on it, execute myFunction
+document.getElementById("myBtn").onclick = function() {myFunction()};
+
+/* myFunction toggles between adding and removing the show class, which is used to hide and show the dropdown content */
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+</script>
+
+
+
+</div></div></div></div></div>
+
+
+<!--ESPORT TEAM LANDING NEWS BEGIN--> 
+<div class="esport-team-landing-news">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h5 class="esport-landing-header">latest news</h5>
+            </div>
+        </div>
+        <div class="row row-eq-height">
+            <div class="col-md-4">
+                <a href="https://www.youtube.com/watch?v=i1IKnWDecwA" target="_blank" class="news-wprapper">
+                    <img src="images/common/esport-team-landing-news-big.jpg" alt="news-img">
+                    <div class="news-border">
+                        <span class="date">8 october</span>
+                        <span class="name">Phoenix (ft. Cailin Russo e Chrissy Costanza)</span>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-8">
+                <div class="row no-gutters row-eq-height">
+                    <div class="col-md-6">
+                        <a href ="https://teamfighttactics.leagueoflegends.com/it-it/" target="_blank" class="news-wprapper">
+                            <img src="images/common/esport-team-landing-news-1.jpg" alt="news-img">
+                            <div class="news-border">
+                                <span class="date">16 october</span>
+                                <span class="name">Announced Teamfight Tactics Mobile</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-6">
+                        <a href ="https://playruneterra.com/it-it/" target="_blank" class="news-wprapper">
+                            <img src="images/common/esport-team-landing-news-2.jpg" alt="news-img">
+                            <div class="news-border">
+                                <span class="date">16 october</span>
+                                <span class="name">Announced Legends Of Runeterra Mobile</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="row no-gutters row-eq-height">
+                    <div class="col-md-6">
+                        <a href ="https://wildrift.leagueoflegends.com/it-it/" target="_blank" class="news-wprapper">
+                            <img src="images/common/esport-team-landing-news-4.jpg" alt="news-img">
+                            <div class="news-border">
+                                <span class="date">16 october</span>
+                                <span class="name">Announced League Of Legends Mobile</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-6">
+                        <a href ="https://www.youtube.com/watch?v=b7BLtQHYY7g&feature=youtu.be" target="_blank" class="news-wprapper">
+                            <img src="images/common/esport-team-landing-news-3.jpg" alt="news-img">
+                            <div class="news-border">
+                                <span class="date">15 october</span>
+                                <span class="name">League Of Legends 10th Anniversary</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>       
+    </div>
+</div>
+
+
+<!--ESPORT TEAM LANDING NEWS BEGIN-->
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <h5 class="esport-landing-header">Subscribe to newsletter</h5> 
+        </div>
+        <div class="col-md-12">
+            <div class="esport-team-landing-subscribe">   
+    <form>
+        <input type="text" name="text" placeholder="Type your e-mail here">
+        <button>subscribe</button>
+    </form>
+</div> 
+        </div>
+    </div>
+</div>
+
+<!--ESPORT TEAM LANDING STORE CONTAINER BEGIN-->
+
+<!--ESPORT TEAM LANDING STORE CONTAINER BEGIN-->
+
+<!--ESPORT TEAM LANDING STORE BEGIN-->
+
+<!--ESPORT TEAM LANDING STORE END-->
+
+<!--ESPORT TEAM LANDING CONTACT BEGIN-->
+
+<!--ESPORT TEAM LANDING CONTACT END-->
+
+<div class="esport-team-landing-footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-5">
+                <div class="header">Featured video
+                    <span>
+                        <a class="arrow left" href="#"><i class="fa fa-caret-left" aria-hidden="true"></i></a>
+                        <a class="arrow rigth" href="#"><i class="fa fa-caret-right" aria-hidden="true"></i></a>
+                    </span>
+                </div>
+                <div class="news-slider footerSlide">
+                    <a href="https://www.youtube.com/watch?v=bFvuXD05XDw" class="news-wprapper" target="_blank">
+                        <img src="images/common/esport-team-landing-news-000.jpg" alt="news-img">
+                        <span class="news-border">
+                            <span class="date">16 october</span>
+                            <span class="name">We Are Legendary | G2 x League of Legends Anniversary</span>
+                        </span>
+                    </a>
+                </div>
+                   <div class="news-slider footerSlide">
+                    <a href="https://www.youtube.com/watch?v=QnrjZrCtk5c" class="news-wprapper" target="_blank">
+                        <img src="images/common/esport-team-landing-news-001.jpg" alt="news-img">
+                        <span class="news-border">
+                            <span class="date">12 october</span>
+                            <span class="name">Bwipo's Spicy Face Revealed! | FNATIC GETS SPICY Ep.1</span>
+                        </span>
+                    </a>
+                </div>
+                   <div class="news-slider footerSlide">
+                    <a href="https://www.youtube.com/watch?v=B_59wZ27ROE" class="news-wprapper" target="_blank">
+                        <img src="images/common/esport-team-landing-news-002.jpg" alt="news-img">
+                        <span class="news-border">
+                            <span class="date">16 october</span>
+                            <span class="name">League of Legends Origins Documentary Trailer</span>
+                        </span>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <span class="header">contact us</span>
+                <span class="welcome">welcome to family</span>
+                <ul class="contact-list" style="background-color: #000000">
+                    <li><span style="background-color: #000000">fantaesports@gmail.com</span></li>
+                    </ul>
+            </div>
+
+
+            <div class="col-md-4 col-sm-6">
+                <span class="header">what they say about us</span>
+                <p>"I never think about losing." </br> - Lux</p>
+		<p>"Wanna play too? It'll be fun!" </br> - Annie</p>
+		<p>"Come on you, let's dance." </br> - Lulu</p>
+		<p>"Welcome to the League of Draven." </br> - Draven</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--ESPORT TEAM LANDING FOOTER LINKS BEGIN-->
+
+<!--ESPORT TEAM LANDING FOOTER LINKS END-->
+
+<script type="text/javascript" src="js/library/jquery.js"></script>
+<script type="text/javascript" src="js/library/jquery-ui.js"></script>
+<script type="text/javascript" src="js/library/bootstrap.js"></script>
+<script type="text/javascript" src="js/library/jquery.sticky.js"></script>
+<script type="text/javascript" src="js/library/jquery.jcarousel.js"></script>
+<script type="text/javascript" src="js/library/jcarousel.connected-carousels.js"></script>
+<script type="text/javascript" src="js/library/owl.carousel.js"></script>
+<script type="text/javascript" src="js/library/progressbar.js"></script>
+<script type="text/javascript" src="js/library/jquery.bracket.min.js"></script>
+<script type="text/javascript" src="js/library/chartist.js"></script>
+<script type="text/javascript" src="js/library/Chart.js"></script>
+<script type="text/javascript" src="js/library/fancySelect.js"></script>
+<script type="text/javascript" src="js/library/isotope.pkgd.js"></script>
+<script type="text/javascript" src="js/library/imagesloaded.pkgd.js"></script>
+
+<script type="text/javascript" src="js/jquery.team-coundown.js"></script>
+<script type="text/javascript" src="js/matches-slider.js"></script>
+<script type="text/javascript" src="js/header.js"></script>
+<script type="text/javascript" src="js/matches_broadcast_listing.js"></script>
+<script type="text/javascript" src="js/news-line.js"></script>
+<script type="text/javascript" src="js/match_galery.js"></script>
+<script type="text/javascript" src="js/main-club-gallery.js"></script>
+<script type="text/javascript" src="js/product-slider.js"></script>
+<script type="text/javascript" src="js/circle-bar.js"></script>
+<script type="text/javascript" src="js/standings.js"></script>
+<script type="text/javascript" src="js/shop-price-filter.js"></script>
+<script type="text/javascript" src="js/timeseries.js"></script>
+<script type="text/javascript" src="js/radar.js"></script>
+<script type="text/javascript" src="js/slider.js"></script>
+<script type="text/javascript" src="js/preloader.js"></script>
+<script type="text/javascript" src="js/diagram.js"></script>
+<script type="text/javascript" src="js/bi-polar-diagram.js"></script>
+<script type="text/javascript" src="js/label-placement-diagram.js"></script>
+<script type="text/javascript" src="js/donut-chart.js"></script>
+<script type="text/javascript" src="js/animate-donut.js"></script>
+<script type="text/javascript" src="js/advanced-smil.js"></script>
+<script type="text/javascript" src="js/svg-path.js"></script>
+<script type="text/javascript" src="js/pick-circle.js"></script>
+<script type="text/javascript" src="js/horizontal-bar.js"></script>
+<script type="text/javascript" src="js/gauge-chart.js"></script>
+<script type="text/javascript" src="js/stacked-bar.js"></script>
+
+<script type="text/javascript" src="js/library/chartist-plugin-legend.js"></script>
+<script type="text/javascript" src="js/library/chartist-plugin-threshold.js"></script>
+<script type="text/javascript" src="js/library/chartist-plugin-pointlabels.js"></script>
+
+<script type="text/javascript" src="js/treshold.js"></script>
+<script type="text/javascript" src="js/visible.js"></script>
+<script type="text/javascript" src="js/anchor.js"></script>
+<script type="text/javascript" src="js/landing_carousel.js"></script>
+<script type="text/javascript" src="js/landing_sport_standings.js"></script>
+<script type="text/javascript" src="js/twitterslider.js"></script>
+<script type="text/javascript" src="js/champions.js"></script>
+<script type="text/javascript" src="js/landing_mainnews_slider.js"></script>
+<script type="text/javascript" src="js/carousel.js"></script>
+<script type="text/javascript" src="js/video_slider.js"></script>
+<script type="text/javascript" src="js/footer_slides.js"></script>
+<script type="text/javascript" src="js/player_test.js"></script>
+
+<script type="text/javascript" src="js/main.js"></script>
+
+
+    
+</body>
